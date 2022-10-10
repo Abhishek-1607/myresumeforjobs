@@ -51,11 +51,11 @@ document.contact.addEventListener("submit", function (e) {
     }
 
 });
-// form in and out
 
-$(".bi").click(function () {
-    $('.form').css("display", "none");
-});
+// 
+document.querySelector(".opn").addEventListener("click",function(){
+    window.open("open.html","_blank","width=400,height=400, left=100,top=100");
+})
 // end
 
 

@@ -26,17 +26,15 @@ a{
     
 }
 .header h1{
-    background: linear-gradient(180deg,red 40%,blue 60%);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff3f3;
+    font-weight: 800;
 }
 
 
 /* nav */
 nav{
     width: 100%;
-    background:linear-gradient(180deg,rgb(0, 204, 255),rgb(255, 85, 0),rgb(255, 247, 0));
+    background-color: #262626;
     display: flex;
     min-height: 70px;
     justify-content: space-between;
@@ -92,9 +90,7 @@ nav ul li a{
 }
 .info h2{
     text-align: center;
-    background: linear-gradient(180deg,hsl(133, 100%, 50%) 40%,hsl(190, 100%, 50%) 60%);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #296b2f;
     animation: movea 1s infinite ease-in-out alternate;
 }
 @keyframes movea {
@@ -108,7 +104,7 @@ nav ul li a{
 .row{
     color: #fff;
     border-radius: 10px;
-    background: linear-gradient(135deg,rgb(0, 98, 255),rgb(255, 94, 0),rgba(0, 0, 0, 0.679));
+    background: rgba(0,0,0,0.78);
     display: flex;
     justify-content: space-around;
     margin: 2% 0;
@@ -134,9 +130,9 @@ nav ul li a{
 } 
 .inname a, .mybtn{
     display: inline-block;
-    padding: 6px 10px;
-    color: aquamarine;
-    border: 1px solid gray;
+    padding: 8px 10px;
+    color: rgb(106, 244, 189);
+    border: 2px solid #f44336;
     margin: 10px;
     border-radius: 33px;
     font-size: 18px;
@@ -154,6 +150,7 @@ nav ul li a{
 .inpic img{
     width: 100%;
     border-radius: 50%;
+    background-color: transparent;
 }
 
 /* footer */
@@ -184,6 +181,9 @@ nav ul li a{
     cursor: pointer;
 }
 /* Educational background */
+.ptr{
+    padding: 10px;
+}
 .inclass{
     flex-basis: 6%;
     text-align: center;
@@ -249,23 +249,8 @@ div p span{
 }
 
 /* form validatino */
-.form{
-    border: 1px solid black;
-    position: absolute;
-    padding: 15px;
-    top: 50%;
-    left: 50%;
-    background-color: aquamarine;
-    transform: translate(-50%,-50%);
-   display: none;
-}
-.form .bi{
-    position: absolute;
-    right: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 21px;
-}
+
+
 .form .bi:hover{
     color: red;
 }
@@ -306,18 +291,6 @@ div p span{
     padding-top: 3%;
 }
 
-.enquirybox{
-    padding: 10px 20px;
-}
-.enquirybox input, .enquirybox textarea{
-    width: 100%;
-    margin: 7px 0;
-    padding: 10px;
-    background: #f0f0f0;
-    outline: none;
-    border: none;
-}
-
 /* project */
 .one{
     margin: 15px 0;
@@ -329,6 +302,7 @@ div p span{
 }
 .one:hover{
     transform: scale(1.1);
+    transition: 1s ease;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
 }
 .one div{
@@ -446,6 +420,15 @@ div p span{
     .nav-menu.active{
         left: 0;
     }
+    @keyframes move {
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 700px;
+        }
+        
+    }
 }
 @media screen and (max-width:400px){
     .incon h5{
@@ -465,6 +448,15 @@ div p span{
     }
     .inper h3{
         font-size: 12px;
+    }
+    @keyframes move {
+        0%{
+            background-position-x: 0px;
+        }
+        100%{
+            background-position-x: 400px;
+        }
+        
     }
     @keyframes movea {
         0%{
