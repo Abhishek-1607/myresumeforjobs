@@ -325,7 +325,9 @@ div p span{
 .train-learnt ul{
     list-style-type: none;
 }
-
+.testimonial-col span{
+    color: #fff;
+}
 .testimonial{
     width: 90%;
     margin: auto;
