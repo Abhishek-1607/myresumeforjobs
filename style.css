@@ -439,6 +439,9 @@ div p span{
         margin-bottom: 5px;
         padding-top: 3%;
     }
+    .info h2{
+        font-size: 20px;
+    }
     #prep{
         font-size: 6px;
     }
@@ -476,5 +479,8 @@ div p span{
     }
     .incon h5, .incon p{
         font-size: 9px;
+    }
+    .info h2{
+        font-size: 12px;
     }
 }
